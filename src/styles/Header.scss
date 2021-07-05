@@ -1,0 +1,193 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+
+$position-values: (
+  0: 0,
+  50: 50%,
+  60: 60%,
+  100: 100%
+) !default;
+
+$min-widthh : 768px;
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header{
+
+    align-content: center;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    opacity: 0.80;
+
+
+    
+
+    .topNav{
+        overflow: hidden;
+        position: relative;
+        
+
+        #topNavLinks{
+            text-align: center;
+            border-top: 1px solid black;
+            animation: slide-down 1.5s forwards;
+
+        }
+
+        @keyframes slide-down {
+            from{
+                transform: translateY(300px) scale(1);
+                opacity: 0;
+            }
+        
+            to{
+                transform: translateY(0);
+        
+            }
+        }
+            
+
+        a {
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+            color:black;
+
+            &:hover{
+                background-color: #ddd;
+                color: black;
+            }
+          }
+    } 
+
+    #logo{
+        padding-top: 13px;
+        padding-left: 5%;
+    }
+   
+
+    .ham-icon{
+        position: absolute;
+        top:0;
+        right:0;
+        padding-right: 5%;
+        
+    }
+    .ham-icon-side{
+        position: absolute;
+        top:0;
+        right:0;
+        padding-right: 5%;
+    }
+   
+}
+
+
+.sidebar {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    background: salmon;
+    font-size: 0.65em;
+    z-index: -1;
+    right: 0;
+    animation: slide-in 1s forwards;
+
+    @keyframes slide-in {
+        from{
+            transform: translateX(300px) scale(1.1);
+            opacity: 0;
+        }
+    
+        to{
+            transform: translateX(0);
+    
+        }
+    }
+
+    
+
+
+    .sideNav{
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: bold;
+        border-bottom: 1px solid black;
+        
+        h1{
+            font-size: 22px;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+            background-color: #042331;
+
+
+        }
+        a{
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 70px;
+            display: block;
+            color:white;
+            border-top: 2px solid rgba(255,255,255, .1);
+            
+            transition: .4s;
+
+
+            &:hover{
+                padding-left: 40px;
+            }
+        }
+
+        
+    }
+
+
+  }
+ 
+ 
+@media screen and (max-width: 768px) {
+
+      // here I am trying to close off the side bar while the screen size is a certain width. To prevent two nav bars being open at the same time!! Just using css this time.
+
+    @if $min-widthh {
+        .sidebar{
+            display: none;
+        }
+      } 
+
+    
+    .header{
+    
+        .ham-icon-side{
+            background:  red;
+          display: none;
+        }
+
+    }
+  }
+
+@media screen and (min-width: 768px) {
+
+    .header{
+    
+        .ham-icon{
+          display: none;
+        }
+
+    }
+  }

@@ -1,35 +1,89 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { Twirl as Hamburger } from 'hamburger-react'
+import { useState, useEffect } from 'react';
+import '../styles/Header.scss'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const w = window.innerWidth;
+const h = window.innerHeight;
+
+
+
+const Header = ({ siteTitle }) => {
+
+  const [isOpenTop, setOpenTop] = useState(false);
+  const [isOpenSide, setOpenSide] = useState(false)
+
+  // here I am trying to close off the side bar while the screen size is a certain width. To prevent two nav bars being open at the same time!!
+
+
+  useEffect(() => {
+    // console.log(w)
+    while(w <= 768){
+      
+       return setOpenTop(false)
+
+    }
+
+   }, []);
+
+  
+  return(
+
+    
+
+      
+    <>
+
+
+
+      <header className='header' style={{ padding: `1rem 1.rem`,  }} >
+         
+  
+      <div class="topNav">
+          <p id="logo"> <>Software Engineer</> </p>
+          
+          
+          <div className="ham-icon">
+            <Hamburger toggled={isOpenTop} toggle={setOpenTop}   />
+            
+          </div>
+          <div className= "ham-icon-side">
+            <Hamburger toggled={isOpenSide} toggle={setOpenSide}   />
+          </div>
+         
+       
+          <div id="topNavLinks" style={{display: isOpenTop ? 'block' : 'none' }}>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <Link to="/project-page/">Projects</Link>
+            <a href="#contact">Contact</a>
+            <a href="#resume">Resume</a>
+          </div>
+
+         </div>
+
+          
+
+    </header>
+    
+    <aside class="sidebar" style={{display: isOpenSide ? 'block' : 'none' }}>
+      <nav className="sideNav" >
+            <h1>Marcus Robinson</h1>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <Link to="/project-page/">Projects</Link>
+            <a href="#contact">Contact</a>
+            <a href="#resume">Resume</a>
+      </nav>
+    </aside>
+
+    </>
+  )
+
+  
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

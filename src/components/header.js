@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import { Twirl as Hamburger } from 'hamburger-react'
 import { useState, useEffect } from 'react';
 import '../styles/Header.scss'
+import Note from "../images/note.png"
 
 const w = window.innerWidth;
 const h = window.innerHeight;
@@ -21,7 +22,7 @@ const Header = ({ siteTitle }) => {
   useEffect(() => {
     // console.log(w)
     while(w <= 768){
-      
+
        return setOpenTop(false)
 
     }
@@ -42,24 +43,29 @@ const Header = ({ siteTitle }) => {
          
   
       <div class="topNav">
-          <p id="logo"> <>Software Engineer</> </p>
           
+          <Link  id="logo" to="/">Portfolio</Link>
+          <Link  id="logo1" to="/">MR</Link>
+
+      
+          <div>
+            <div className="ham-icon">
+              <Hamburger toggled={isOpenTop} toggle={setOpenTop}   />
+              
+            </div>
+            <div className= "ham-icon-side">
+              <Hamburger toggled={isOpenSide} toggle={setOpenSide}   />
+            </div>
+          </div>
           
-          <div className="ham-icon">
-            <Hamburger toggled={isOpenTop} toggle={setOpenTop}   />
-            
-          </div>
-          <div className= "ham-icon-side">
-            <Hamburger toggled={isOpenSide} toggle={setOpenSide}   />
-          </div>
          
        
-          <div id="topNavLinks" style={{display: isOpenTop ? 'block' : 'none' }}>
+          <div className="topNavLinks" style={{display: isOpenTop ? 'block' : 'none' }}>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
-            <Link to="/project-page/">Projects</Link>
             <a href="#contact">Contact</a>
-            <a href="#resume">Resume</a>
+            <Link to="/project-page/">Projects</Link>
+            <a href="https://docs.google.com/document/d/1NZls49sNSryFAytyoRkeJgcXa8Ot6zYDT8gfLJDU0eY/edit?usp=sharing">Resume</a>
           </div>
 
          </div>
@@ -75,7 +81,7 @@ const Header = ({ siteTitle }) => {
             <a href="#skills">Skills</a>
             <Link to="/project-page/">Projects</Link>
             <a href="#contact">Contact</a>
-            <a href="#resume">Resume</a>
+            <a href="https://docs.google.com/document/d/1NZls49sNSryFAytyoRkeJgcXa8Ot6zYDT8gfLJDU0eY/edit?usp=sharing">Resume</a>
       </nav>
     </aside>
 

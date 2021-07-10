@@ -1,0 +1,59 @@
+.footer-box{
+    z-index: 1;
+    position: relative;
+
+
+    .footer{
+        background-color: #7f5a83;
+        background-image: linear-gradient( #7f5a83 0%, #0d324d 74%);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 2.6rem;
+        align-items: center;
+        padding:10px;
+
+        .foot-ul{
+            list-style-type:none ;
+            color: inherit;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .foot-ul{
+                transition: all .4s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 22px;
+                }
+
+            }
+
+            a:link {
+                color: blanchedalmond;
+              }
+
+            a:visited {
+                color: blanchedalmond;
+
+              }
+
+            a:hover {
+                color: salmon;
+            }
+
+
+        }
+    }
+}
+
+
+.foot-icon{
+    
+}

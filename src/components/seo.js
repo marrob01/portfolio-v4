@@ -53,7 +53,7 @@ function Seo({ description, lang, meta, title }) {
         {
           property: `og:type`,
           content: `website`,
-        },
+        },  
         {
           name: `twitter:card`,
           content: `summary`,

@@ -6,7 +6,7 @@ import '../styles/Header.scss'
 
 
 
-const TopBody = ({ siteTitle }) => {
+const TopBody = () => {
 
     
     return(
@@ -17,7 +17,7 @@ const TopBody = ({ siteTitle }) => {
             <div className="top-box">
 
             <h1>
-                    I Create<br></br> Unique <br></br>Experiences 
+                I Create<br></br> Unique <br></br>Experiences 
 
             </h1>
 
@@ -36,7 +36,7 @@ const TopBody = ({ siteTitle }) => {
             
 
         </section>
- 
+
        
       </>
     )

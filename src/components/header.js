@@ -6,8 +6,6 @@ import { useState, useEffect } from 'react';
 import '../styles/Header.scss'
 
 
-const w = window.innerWidth;
-const h = window.innerHeight;
 
 
 

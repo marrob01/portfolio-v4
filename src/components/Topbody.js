@@ -25,7 +25,7 @@ const TopBody = () => {
                 Software Engineer | Full Stack Engineer, New York, NYC
             </h5>
 
-            <Link to="/">
+            <Link to="/project-page/">
             <button>
                 Learn More About Me  
             </button>

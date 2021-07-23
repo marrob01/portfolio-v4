@@ -1,9 +1,11 @@
 
 body{
-    background-color: grey;
-    // height:100%;
+  background-color: rgb(182, 187, 218) ;;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 .intro-box{
   background-color:#6e4d72;
@@ -76,7 +78,7 @@ body{
 .project-container{
   text-align: center;
   margin-left: 0;
-  background-color: rgb(112, 127, 214) ;
+  background-color: rgb(182, 187, 218) ;
 
   #i{
     padding-top: 15px;
@@ -99,6 +101,8 @@ body{
 
   .app-des{
     list-style-type: none;
+    font-size: 30px;
+
 
 
     &:hover{
@@ -179,9 +183,7 @@ button{
   width: 100%;
   padding: 40px;
 
-  ul{
-    cursor: pointer;
-  }
+  
 
   h1{
     padding-left: 5%;

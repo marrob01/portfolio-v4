@@ -1,13 +1,10 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
-import Dummy from '../components/dummy'
 import Seo from "../components/seo"
 import '../styles/Footer.scss'
 import TopBody from '../components/Topbody'
 import Body from '../components/HomeBody'
-import { StaticImage } from "gatsby-plugin-image"
 
 
 

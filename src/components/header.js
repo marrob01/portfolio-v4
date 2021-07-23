@@ -14,18 +14,7 @@ const Header = ({ siteTitle }) => {
   const [isOpenTop, setOpenTop] = useState(false);
   const [isOpenSide, setOpenSide] = useState(false)
 
-  // here I am trying to close off the side bar while the screen size is a certain width. To prevent two nav bars being open at the same time!!
 
-
-  // useEffect(() => {
-  //   // console.log(w)
-  //   while(w <= 768){
-
-  //      return setOpenTop(false)
-
-  //   }
-
-  //  }, []);
 
   
   return(
@@ -59,10 +48,10 @@ const Header = ({ siteTitle }) => {
          
        
           <div className="topNavLinks" style={{display: isOpenTop ? 'block' : 'none' }}>
-            <Link to="#">About </Link> 
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="https://docs.google.com/document/d/1NZls49sNSryFAytyoRkeJgcXa8Ot6zYDT8gfLJDU0eY/edit?usp=sharing">Resume</a>
+            <Link to="/project-page/">About </Link> 
+            <Link to="/#projects">Projects</Link>
+            <Link to="/#skills">Skills</Link>
+            <a href="https://docs.google.com/document/d/1NZls49sNSryFAytyoRkeJgcXa8Ot6zYDT8gfLJDU0eY/edit?usp=sharing" target= 'blank'>Resume</a>
           </div>
 
          </div>
@@ -74,10 +63,10 @@ const Header = ({ siteTitle }) => {
     <aside class="sidebar" style={{display: isOpenSide ? 'block' : 'none' }}>
       <nav className="sideNav" >
             <h1>Software Engineer</h1>
-            <Link to="#">About </Link> 
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="https://docs.google.com/document/d/1NZls49sNSryFAytyoRkeJgcXa8Ot6zYDT8gfLJDU0eY/edit?usp=sharing">Resume</a>
+            <Link to="/project-page/">About </Link> 
+            <Link to="/#projects">Projects</Link>
+            <Link to="/#skills">Skills</Link>
+            <a href="https://docs.google.com/document/d/1NZls49sNSryFAytyoRkeJgcXa8Ot6zYDT8gfLJDU0eY/edit?usp=sharing" target= 'blank'>Resume</a>
       </nav>
     </aside>
 

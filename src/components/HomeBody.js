@@ -5,6 +5,8 @@ import { useState, useEffect } from 'react';
 import { CgBrowser } from 'react-icons/cg';
 import { AiFillWechat } from 'react-icons/ai';
 import { VscBook } from 'react-icons/vsc';
+import { Link } from "gatsby"
+
 
 
 
@@ -68,6 +70,7 @@ const HomeBody = ( ) => {
 
               <li className= "home-img">
                         <h2>MA's Daily Dose | MERN STACK</h2>
+                        <Link to='https://ma-health-app.herokuapp.com/'>
                         { <StaticImage
                           src="../images/atp-photo.png"
                           quality={95}
@@ -80,13 +83,14 @@ const HomeBody = ( ) => {
                           
                   
                           /> }
+                          </Link>
                           <li onClick={ () => setAppDes(!appDes)}  className="app-des">App Description</li>
 
                           {appDes ? <p>M and A’s Daily Dose:  A free mental health app where users can go for mental care and inspiration. In the end users can create an account and get free mental health advice or tips. A full CRUD app with seven RESTful routes, built with Express, MongoDB, JavaScriptES6, HTML, and CSS.<br></br><a href="https://github.com/marrob01/M-and-A-Mental-Health"><button type="button" class="gh-btn">
                     Git Hub 
                    </button></a>
                               ~~
-                   <a href="https://ma-health-app.herokuapp.com/"><button type="button" class="deployed-btn">
+                   <a href="https://ma-health-app.herokuapp.com/" target= 'blank'><button type="button" class="deployed-btn">
                     Deployed
                     </button></a></p>
 
@@ -102,6 +106,7 @@ const HomeBody = ( ) => {
 
               <li className= "home-img">
                         <h2>Around The Plate | Full Stack</h2>
+                        <Link to = "https://around-the-plate-frontend.herokuapp.com/">
                         { <StaticImage
                           src="../images/atp-photo-1.png"
                           quality={100}
@@ -111,6 +116,7 @@ const HomeBody = ( ) => {
                           width = {600}
                           className= "home-img"
                           /> }
+                          </Link>
 
                         <li onClick={ () => setAppDes1(!appDes1)} className="app-des">App Description</li>
 
@@ -118,7 +124,7 @@ const HomeBody = ( ) => {
                             Git Hub
                         </button></a>
                             ~~
-                   <a href="https://around-the-plate-frontend.herokuapp.com/"><button type="button" class="deployed-btn">
+                   <a href="https://around-the-plate-frontend.herokuapp.com/" target= 'blank'><button type="button" class="deployed-btn">
                      Deployed
                     </button></a></p>
 
@@ -133,6 +139,7 @@ const HomeBody = ( ) => {
 
                 <li className= "home-img">
                         <h2>Black Box Traveling | MERN Stack</h2>
+                        <Link to = "https://blackbfrontend.herokuapp.com/">
                         { <StaticImage
                           src="../images/atp.png"
                           quality={100}
@@ -142,6 +149,7 @@ const HomeBody = ( ) => {
                           width = {600}
                           className= "home-img"
                           /> }
+                          </Link>
 
                         <li onClick={ () => setAppDes1(!appDes1)} className="app-des">App Description</li>
 
@@ -149,7 +157,7 @@ const HomeBody = ( ) => {
                             Git Hub
                         </button></a>
                             ~~
-                   <a href="https://blackbfrontend.herokuapp.com/"><button type="button" class="deployed-btn">
+                   <a href="https://blackbfrontend.herokuapp.com/" target= 'blank'><button type="button" class="deployed-btn">
                      Deployed
                     </button></a></p>
 
@@ -165,7 +173,7 @@ const HomeBody = ( ) => {
                 
             </ul>
 
-            <div className="skills">
+            <div className="skills" id="skills">
 
 
               <h1 id="tech-h1">Technical Skills -</h1>

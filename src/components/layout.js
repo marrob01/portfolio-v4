@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
 
         <footer id="footer" class="footer">
             <ul class="foot-ul">
-                <li class="foot-ul"><a href="tel:+19179120039">Cell  <CgPhone className="foot-icon"/> </a></li>
+                <li class="foot-ul"><a href="tel:+17189157473">Cell  <CgPhone className="foot-icon"/> </a></li>
 
                 <li class="foot-ul"><a href="https://www.linkedin.com/in/marcusrobinson15/">Linkedin</a></li>
                 <li class="foot-ul"><a href="https://docs.google.com/document/d/1NZls49sNSryFAytyoRkeJgcXa8Ot6zYDT8gfLJDU0eY/edit?usp=sharing" target="blank">Resume <CgFileDocument className="foot-icon" /></a></li>

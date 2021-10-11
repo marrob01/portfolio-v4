@@ -1,8 +1,11 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import { Twirl as Hamburger } from 'hamburger-react'
-import { useState, useEffect } from 'react';
+import * as FaIcons from "react-icons/fa"
+import * as AiIcons from "react-icons/ai"
+import { SidebarData, TopNaVData } from "./SidebarData"
+import { IconContext } from "react-icons"
+import { useState } from 'react';
 import '../styles/Header.scss'
 
 
@@ -11,70 +14,75 @@ import '../styles/Header.scss'
 
 const Header = ({ siteTitle }) => {
 
-  const [isOpenTop, setOpenTop] = useState(false);
-  const [isOpenSide, setOpenSide] = useState(false)
+  const [sidebar, setSidebar] = useState(false)
+
+    const showSidebar = () => setSidebar(!sidebar)
 
 
 
-  
-  return(
+    return (
+      <>
 
-    
-
-      
-    <>
+        <IconContext.Provider value={{ color: "#ffebcd" }}>
+          <nav className="navbar">
 
 
+            <Link to="#" className="menu-bars">
+              <FaIcons.FaBars onClick={showSidebar} />
+            </Link>
 
-      <header className='header' style={{ padding: `1rem 1.rem`,  }} >
-         
-  
-      <div class="topNav">
-          
-          <Link  id="logo" to="/">Portfolio</Link>
-          <Link  id="logo1" to="/">MR</Link>
 
-      
-          <div>
-            <div className="ham-icon">
-              <Hamburger toggled={isOpenTop} toggle={setOpenTop}   />
-              
-            </div>
-            <div className= "ham-icon-side">
-              <Hamburger toggled={isOpenSide} toggle={setOpenSide}   />
-            </div>
-          </div>
-          
-         
-       
-          <div className="topNavLinks" style={{display: isOpenTop ? 'block' : 'none' }}>
-            <Link to="/project-page/">About </Link> 
-            <Link to="/#projects">Projects</Link>
-            <Link to="/#skills">Skills</Link>
-            <a href="https://docs.google.com/document/d/1NZls49sNSryFAytyoRkeJgcXa8Ot6zYDT8gfLJDU0eY/edit?usp=sharing" target= 'blank'>Resume</a>
-          </div>
+            {/* <h1>ALS</h1> */}
+              <ul className="ul-nav">
 
-         </div>
 
-          
+                {TopNaVData.map((item, index) =>{
+                  return(
+                    <li  key={index} >
+                    <Link to={item.path} target="blank">
+                      {/* {item.icon} */}
+                      <span>{item.title}</span>
+                    </Link>
+                  </li>
 
-    </header>
-    
-    <aside class="sidebar" style={{display: isOpenSide ? 'block' : 'none' }}>
-      <nav className="sideNav" >
-            <h1>Software Engineer</h1>
-            <Link to="/project-page/">About </Link> 
-            <Link to="/#projects">Projects</Link>
-            <Link to="/#skills">Skills</Link>
-            <a href="https://docs.google.com/document/d/1NZls49sNSryFAytyoRkeJgcXa8Ot6zYDT8gfLJDU0eY/edit?usp=sharing" target= 'blank'>Resume</a>
-      </nav>
-    </aside>
+                  )
+                })}
 
-    </>
-  )
+              </ul>
 
-  
-}
+
+
+          </nav>
+          <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+            <ul className="nav-menu-items" onClick={showSidebar}>
+              <li className="navbar-toggle">
+                <Link to="#" className="menu-bars">
+                  <AiIcons.AiOutlineClose />
+                </Link>
+              </li>
+              {SidebarData.map((item, index) => {
+                return (
+                  <li key={index} className={item.cName}>
+                    <Link to={item.path} target="blank">
+                      {item.icon}
+                      <span>{item.title}</span>
+                    </Link>
+                  </li>
+                )
+              })}
+            </ul>
+          </nav>
+        </IconContext.Provider>
+
+
+
+
+
+
+
+      </>
+    )
+  }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

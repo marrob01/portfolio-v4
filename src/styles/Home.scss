@@ -1,7 +1,5 @@
 
-body{
-  background-color: rgb(182, 187, 218) ;;
-}
+
 
 html{
   scroll-behavior: smooth;
@@ -10,7 +8,7 @@ html{
 .intro-box{
   background-color:#6e4d72;
   color: rgb(233, 209, 173);
-  
+
   padding-top: 30px;
   padding-bottom: 10px;
 
@@ -19,7 +17,7 @@ html{
     list-style-type : none;
     font-size: 30px;
     line-height: 50px;
- 
+
   }
 
   .p-box h2{
@@ -42,7 +40,7 @@ html{
     justify-content: space-around;
     font-size: 30px;
 
- 
+
   }
 
   .p-box p{
@@ -60,7 +58,8 @@ html{
     position: absolute;
     top:60%;
     width: 100%;
-    background-color: grey;
+    background-color: rgb(31, 31, 36) ;
+    z-index: -1;
 
     .work-p{
         list-style-type: none;
@@ -78,16 +77,16 @@ html{
 .project-container{
   text-align: center;
   margin-left: 0;
-  background-color: rgb(182, 187, 218) ;
+  background-color: rgb(31, 31, 36) ;;
 
   #i{
     padding-top: 15px;
-    text-decoration: underline;
     user-select: none;
   }
 
   h2, p{
-    color: rgb(54, 44, 44);
+    color: rgb(231, 184, 112);
+
   }
 
   #cs-btn{
@@ -97,22 +96,22 @@ html{
 
     color: rgb(54, 44, 44);
   }
- 
+
 
   .app-des{
     list-style-type: none;
     font-size: 30px;
+    color: blanchedalmond;
 
 
 
     &:hover{
       transition: ease-in-out .3S;
-      color: blanchedalmond;
-      text-decoration: underline;
+      color: #6e4d72;
       cursor: pointer;
     }
   }
-  
+
 
   p{
     padding: 10px;
@@ -125,20 +124,21 @@ html{
   //         transform: translateY(300px);
   //         opacity: 0;
   //     }
-  
+
   //     to{
   //         transform: translateY(0);
-  
+
   //     }
   // }
 
-   
+
   }
 
   .home-img {
     display: inline-block;
     border-radius: 30px;
-  
+    color: blanchedalmond;
+
 }
 button{
   padding: 5px;
@@ -174,7 +174,7 @@ button{
 
   }
 
-  
+
 }
 
 
@@ -183,7 +183,7 @@ button{
   width: 100%;
   padding: 40px;
 
-  
+
 
   h1{
     padding-left: 5%;

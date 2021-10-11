@@ -17,11 +17,11 @@ const HomeBody = ( ) => {
       const [appDes, setAppDes] = useState(false)
       const [appDes1, setAppDes1] = useState(false)
       console.log(appDes);
- 
+
       return(
-        
+
           <>
- 
+
           <section id="home-body">
 
             <div className="intro-box">
@@ -29,7 +29,7 @@ const HomeBody = ( ) => {
                 <ul className="t-ul">
                   <li className="t-li">
                   <CgBrowser /><br></br>
-                  Scalable Applications 
+                  Scalable Applications
                   </li>
 
                   <li className="t-li">
@@ -39,33 +39,33 @@ const HomeBody = ( ) => {
 
                   <li className="t-li">
                   <VscBook /><br></br>
-                  Driven To Learn 
+                  Driven To Learn
                   </li>
 
                 </ul>
 
                 <div className="p-box">
 
-                    <h2>Hello everyone!<br></br> I am Marcus Robinson.<br></br> Please feel free to explore my talent.</h2>
+                    <h2>Hello everyone!<br></br> I am Marcus Robinson<br></br> Please feel free to explore my talent</h2>
 
-                    <p>I am a software engineer, a martial artist, a chef. My analytical and determined mindset helps me solve and persist through challenges. I highly value constant communication and collaboration with both team members and clients. I strive to deliver communication and unique solutions in and outside of engineering.</p>
+                    <p>I am a Frontend Software Engineer who thrives in fast-paced team oriented environments.
+                       My analytical and tenacious mindset helps me persist through challenges by taking a step by step approach. I strive to deliver communication and unique solutions in and outside of engineering.
+                    </p>
 
 
                 </div>
 
-            
+
             </div>
-      
+
 
             <ul className="project-container" id="projects">
 
-            <ul className="work-p"><li><h2 id ="i">
-                View My Recent Projects</h2><br></br>
-                  <button id="cs-btn">More Coming Soon!</button>
-                </li>
-                {/* <Link to="/project-page/" id="link">
+            <ul className="work-p">
+              <h2 id ="i">
+                 View My Recent Projects ={"> () {"}</h2><br></br>
+                
              
-                </Link> */}
               </ul>
 
               <li className= "home-img">
@@ -79,15 +79,15 @@ const HomeBody = ( ) => {
                           style={{ marginBottom: `1.45rem` }}
                           width = {700}
                           className= "home-img"
-                          
-                          
-                  
+
+
+
                           /> }
                           </Link>
                           <li onClick={ () => setAppDes(!appDes)}  className="app-des">App Description</li>
 
                           {appDes ? <p>M and A’s Daily Dose:  A free mental health app where users can go for mental care and inspiration. In the end users can create an account and get free mental health advice or tips. A full CRUD app with seven RESTful routes, built with Express, MongoDB, JavaScriptES6, HTML, and CSS.<br></br><a href="https://github.com/marrob01/M-and-A-Mental-Health"><button type="button" class="gh-btn">
-                    Git Hub 
+                    Git Hub
                    </button></a>
                               ~~
                    <a href="https://ma-health-app.herokuapp.com/" target= 'blank'><button type="button" class="deployed-btn">
@@ -97,12 +97,12 @@ const HomeBody = ( ) => {
                       : <p></p>
               }
 
-                          
+
               </li>
 
-              
+
              <hr></hr>
-            
+
 
               <li className= "home-img">
                         <h2>Around The Plate | Full Stack</h2>
@@ -134,7 +134,7 @@ const HomeBody = ( ) => {
               }
 
                 </li>
-              
+
                 <hr></hr>
 
                 <li className= "home-img">
@@ -167,44 +167,54 @@ const HomeBody = ( ) => {
               }
 
                 </li>
-              
+
                 <hr></hr>
 
-                
+                <h2 id ="i">
+                {"}"}</h2><br></br>
+
+
             </ul>
 
             <div className="skills" id="skills">
 
 
-              <h1 id="tech-h1">Technical Skills -</h1>
+              <h1 id="tech-h1">Technical Skills</h1>
               <div className = "skills-div">
 
                 <ul className="skills-ul">
                   <h2>Backend Skills</h2>
+                  <li>PostgreSQL</li>
                   <li>SQL</li>
                   <li>Flask</li>
                   <li>MongoDB</li>
-                  <li>PostgreSQL</li>
+                  <li>Python</li>
                 </ul>
 
                 <ul className="skills-ul">
                   <h2>Frontend Skills</h2>
                   <li>React</li>
+                  <li>Express</li>
                   <li>jQuery</li>
                   <li>HTML 5</li>
                   <li>Node.js</li>
                   <li>CSS / SCSS</li>
                   <li>Bootstrap</li>
-                  <li>JavaScriptES6</li>
-                  
-                  
+                  <li>JavaScript</li>
+
+
                 </ul>
-                
+
                 <ul className="skills-ul">
                   <h2>Other Skills</h2>
                   <li>UNIX</li>
-                  <li>Github</li>
+                  <li>Git / Github</li>
                   <li>Heroku</li>
+                  <li>Postman</li>
+                  <li>JSON</li>
+                  <li>APIs</li>
+                  <li>Mobile First</li>
+                  <li>Object-oriented design</li>
 
                 </ul>
               </div>
@@ -214,17 +224,17 @@ const HomeBody = ( ) => {
 
 
 
-            
+
 
           </section>
           </>
-        
-      
-      ) 
+
+
+      )
   }
-  
 
 
 
-  
+
+
   export default HomeBody

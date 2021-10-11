@@ -23,8 +23,7 @@ class projectPage extends React.Component {
         authorName={authorName}
       >
         <Seo title="About Page"/>
-      
-        <Link to="/">Go back to the homepage</Link>
+
 
         <AboutBody />
       </Layout>
@@ -34,9 +33,9 @@ class projectPage extends React.Component {
     )
   }
 
-    
 
-  
+
+
 }
 
 export default projectPage

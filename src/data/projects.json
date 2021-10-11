@@ -1,31 +1,33 @@
-[ 
-    {
-        "projectName" : "Around The Plate",
-        "slug": "project-1",
-        
-        "madeWith" : "Built with Flask Python and postgresQL as my backend server. React, React Router, React Bootstrap, CSS and a little  React Semantic-UI to serve my front end. Used API’s from Rapid API to find recipe information.",
 
-        "description" : "A recipe and food information app users can use to find any recipe by an ingredient from anywhere in the world! Get real time results back as you browse recipes or another users recipes. Users can create their own recipes to share with others around the world.",
 
-        "image" : "",
+    [
+        {
+            "projectName" : "Around The Plate",
+            "slug": "project-1",
 
-        "deployed" : "https://around-the-plate-frontend.herokuapp.com/"
-    },
-    {
+            "madeWith" : "Built with Flask Python and postgresQL as my backend server. React, React Router, React Bootstrap, CSS and a little  React Semantic-UI to serve my front end. Used API’s from Rapid API to find recipe information.",
 
-        "projectName" : "MA's Daily Dose",
-        "slug": "project-2",
-        
-        "madeWith" : "A full CRUD app with seven RESTful routes, built with Express, MongoDB, JavaScriptES6, HTML, and CSS",
+            "description" : "A recipe and food information app users can use to find any recipe by an ingredient from anywhere in the world! Get real time results back as you browse recipes or another users recipes. Users can create their own recipes to share with others around the world.",
+    
+            "image" : "",
 
-        "description" : "A free mental health app where users can go for mental care and inspiration. Users can create an account and get free mental health advice or tips.",
-        
-        "image" : "",
+            "deployed" : "https://around-the-plate-frontend.herokuapp.com/"
+        },
+        {
 
-        "deployed" : "https://ma-health-app.herokuapp.com/"
+            "projectName" : "MA's Daily Dose",
+            "slug": "project-2",
 
-    },
-    {
+            "madeWith" : "A full CRUD app with seven RESTful routes, built with Express, MongoDB, JavaScriptES6, HTML, and CSS",
 
-    }
-]
+            "description" : "A free mental health app where users can go for mental care and inspiration. Users can create an account and get free mental health advice or tips.",
+
+            "image" : "",
+
+            "deployed" : "https://ma-health-app.herokuapp.com/"
+
+        },
+        {
+
+        }
+    ]

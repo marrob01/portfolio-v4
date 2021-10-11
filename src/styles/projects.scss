@@ -1,7 +1,5 @@
 body{
-    scroll-behavior: smooth;
     box-sizing: border-box;
-    background-color: rgb(182, 187, 218) ;;
 }
 
 
@@ -11,19 +9,17 @@ body{
     width: 100%;
     height: 130vh;
     text-align: center;
-    top: 8%;
+    top: 15%;
     padding-bottom: 50px;
+    z-index: -1;
     // display: flex;
 
-
-    
-    .about-img{
-        // width: 300px;
-        border-radius: 30px;
+    .about-text{
+        margin:  0 auto;
     }
 
-    .about-text{
-        color: rgb(54, 44, 44);;
+    .about-text, p{
+        color: blanchedalmond;
     }
 }
 

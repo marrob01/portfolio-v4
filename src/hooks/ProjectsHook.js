@@ -1,26 +1,26 @@
-import { useStaticQuery, graphql } from "gatsby"
-import Layout from "../components/layout";
+// import { useStaticQuery, graphql } from "gatsby"
+// import Layout from "../components/layout";
 
-export const ProjectData = () => {
+// export const ProjectData = () => {
 
-  const data = useStaticQuery(
-    graphql`
-      {
-        allProjectsJson{
-            edges{
-              node{
+//   const data = useStaticQuery(
+//     graphql`
+//       {
+//         allProjectsJson{
+//             edges{
+//               node{
                 
-                projectName
+//                 projectName
         
-              }
+//               }
               
-            }
-          }
-      }
-    `
-  )
-  return  data.allProjectsJson.edges[0].projectName;
-}
+//             }
+//           }
+//       }
+//     `
+//   )
+//   return  data.allProjectsJson.edges[0].projectName;
+// }
 
 // const projects = data.allProjectsJson.edges;
 //   return (

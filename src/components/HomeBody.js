@@ -63,9 +63,11 @@ const HomeBody = ( ) => {
 
             <ul className="work-p">
               <h2 id ="i">
-                 View My Recent Projects ={"> () {"}</h2><br></br>
+
+                 View My Recent Projects ={"() => {"}
+                 
+              </h2><br></br>
                 
-             
               </ul>
 
               <li className= "home-img">
@@ -80,13 +82,11 @@ const HomeBody = ( ) => {
                           width = {700}
                           className= "home-img"
 
-
-
                           /> }
                           </Link>
-                          <li onClick={ () => setAppDes(!appDes)}  className="app-des">App Description</li>
 
-                          {appDes ? <p>M and A’s Daily Dose:  A free mental health app where users can go for mental care and inspiration. In the end users can create an account and get free mental health advice or tips. A full CRUD app with seven RESTful routes, built with Express, MongoDB, JavaScriptES6, HTML, and CSS.<br></br><a href="https://github.com/marrob01/M-and-A-Mental-Health"><button type="button" class="gh-btn">
+                          <li onClick={ () => setAppDes(!appDes)}  className="app-des">App Description</li>
+                          {appDes ? <p>M and A’s Daily Dose: A free mental health app where users can go for mental care and inspiration. In the end users can create an account and get free mental health advice or tips. A full CRUD app with seven RESTful routes, built with Express, MongoDB, JavaScriptES6, HTML, and CSS.<br></br><a href="https://github.com/marrob01/M-and-A-Mental-Health"><button type="button" class="gh-btn">
                     Git Hub
                    </button></a>
                               ~~
@@ -153,7 +153,7 @@ const HomeBody = ( ) => {
 
                         <li onClick={ () => setAppDes1(!appDes1)} className="app-des">App Description</li>
 
-                        {appDes1 ? <p>Black Box Traveling:  A travel/vacation app users can use to find hotels, restaurants and events near any part of the world they want to travel. Included API’s so users can make a travel plan anywhere in the world and get updates in real time. A full MERN stack application, built with React and Bootstrap serving as the front end and Express and MongoDB serving as the back end.<br></br><a href="https://github.com/CoHogan1/Black-Box-Front_end"><button type="button" class="gh-btn">
+                        {appDes1 ? <p>Black Box Traveling: A travel/vacation app users can use to find hotels, restaurants and events near any part of the world they want to travel. Included API’s so users can make a travel plan anywhere in the world and get updates in real time. A full MERN stack application, built with React and Bootstrap serving as the front end and Express and MongoDB serving as the back end.<br></br><a href="https://github.com/CoHogan1/Black-Box-Front_end"><button type="button" class="gh-btn">
                             Git Hub
                         </button></a>
                             ~~
@@ -168,7 +168,42 @@ const HomeBody = ( ) => {
 
                 </li>
 
+
+               
+
                 <hr></hr>
+
+                <li className= "home-img">
+
+<h2>Covid 19 Budget App | MERN Stack</h2>
+<Link to = "https://covidspending.netlify.app/">
+{ <StaticImage
+  src="../images/covid.png"
+  quality={100}
+  formats={["AUTO", "WEBP", "AVIF"]}
+  alt="Covid 19 Budget App"
+  style={{ marginBottom: `1.45rem` }}
+  width = {600}
+  className= "home-img"
+  /> }
+  </Link>
+
+<li onClick={ () => setAppDes1(!appDes1)} className="app-des">App Description</li>
+
+{appDes1 ? <p>Covid 19 Budget App: <br></br><a href="https://github.com/CoHogan1/Black-Box-Front_end"><button type="button" class="gh-btn">
+    Git Hub
+</button></a>
+    ~~
+<a href="https://covidspending.netlify.app/" target= 'blank'><button type="button" class="deployed-btn">
+Deployed
+</button></a></p>
+
+: <p></p>
+
+
+}
+
+</li>
 
                 <h2 id ="i">
                 {"}"}</h2><br></br>

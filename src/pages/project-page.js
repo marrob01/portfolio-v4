@@ -1,47 +1,35 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import AboutBody from '../components/aboutBody'
-
+import AboutBody from "../components/aboutBody"
 
 class projectPage extends React.Component {
-
-  render () {
-
+  render() {
     const { data } = this.props
     const pageTitle = data.site.siteMetadata.title
     const authorName = data.site.siteMetadata.author
 
-    return(
-
+    return (
       <Layout
         title={pageTitle}
         subtitle="About Marcus Robinson"
         authorName={authorName}
       >
-        <Seo title="About Page"/>
-
+        <Seo title="About Page" />
 
         <AboutBody />
       </Layout>
-
-
-
     )
   }
-
-
-
-
 }
 
 export default projectPage
 export const pageQuery = graphql`
   query {
-    site{
+    site {
       siteMetadata {
         title
         author

@@ -4,10 +4,6 @@ import * as IoIcons from "react-icons/io"
 import * as GiIcons from "react-icons/gi"
 import * as FaIcons from "react-icons/fa"
 
-
-
-
-
 export const SidebarData = [
   {
     title: "Home",
@@ -35,12 +31,12 @@ export const SidebarData = [
   },
   {
     title: "Resume",
-    path: "https://docs.google.com/document/d/1NZls49sNSryFAytyoRkeJgcXa8Ot6zYDT8gfLJDU0eY/edit?usp=sharing" ,
+    path:
+      "https://docs.google.com/document/d/1NZls49sNSryFAytyoRkeJgcXa8Ot6zYDT8gfLJDU0eY/edit?usp=sharing",
     icon: <IoIcons.IoMdPeople />,
     cName: "nav-text",
   },
 ]
-
 
 export const TopNaVData = [
   {
@@ -69,10 +65,9 @@ export const TopNaVData = [
   },
   {
     title: "Resume",
-    path: "https://docs.google.com/document/d/1NZls49sNSryFAytyoRkeJgcXa8Ot6zYDT8gfLJDU0eY/edit?usp=sharing",
+    path:
+      "https://docs.google.com/document/d/1NZls49sNSryFAytyoRkeJgcXa8Ot6zYDT8gfLJDU0eY/edit?usp=sharing",
     icon: <IoIcons.IoMdPeople />,
     cName: "nav-text",
   },
-
-
 ]

@@ -6,7 +6,6 @@ module.exports = {
   },
 
   plugins: [
-    
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
@@ -24,7 +23,6 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
-    
 
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -41,7 +39,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

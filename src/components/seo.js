@@ -23,8 +23,8 @@ function Seo({ description, lang, meta, title }) {
         }
       }
     `
-  );
-  
+  )
+
   // console.log(site)
 
   const metaDescription = description || site.siteMetadata.description
@@ -53,7 +53,7 @@ function Seo({ description, lang, meta, title }) {
         {
           property: `og:type`,
           content: `website`,
-        },  
+        },
         {
           name: `twitter:card`,
           content: `summary`,

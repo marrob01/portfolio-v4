@@ -1,28 +1,17 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-
+import React from "react"
+import { StaticQuery, graphql } from "gatsby"
 
 export default () => (
   <StaticQuery
     query={graphql`
       query fordummy {
-        site{
+        site {
           siteMetadata {
             description
-
           }
         }
       }
-
     `}
-
-
-
-
-    render={data => (
-      <p>{data.site.siteMetadata.description}</p>
-    )}
-
+    render={data => <p>{data.site.siteMetadata.description}</p>}
   />
-
-  )
+)

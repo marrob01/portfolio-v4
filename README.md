@@ -1,14 +1,8 @@
-
 ## 🚀 My Portfolio (Gatsby)
-
-
 
 1.  **Technology**
 
 For this portfolio I used React Gatsby and SCSS to develop this site. I praticed using CSS animations on this as well.
-    
-
-
 
 ## 💫 Deploy
 

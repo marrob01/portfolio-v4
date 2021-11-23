@@ -1,33 +1,27 @@
+[
+  {
+    "projectName": "Around The Plate",
+    "slug": "project-1",
 
+    "madeWith": "Built with Flask Python and postgresQL as my backend server. React, React Router, React Bootstrap, CSS and a little  React Semantic-UI to serve my front end. Used API’s from Rapid API to find recipe information.",
 
-    [
-        {
-            "projectName" : "Around The Plate",
-            "slug": "project-1",
+    "description": "A recipe and food information app users can use to find any recipe by an ingredient from anywhere in the world! Get real time results back as you browse recipes or another users recipes. Users can create their own recipes to share with others around the world.",
 
-            "madeWith" : "Built with Flask Python and postgresQL as my backend server. React, React Router, React Bootstrap, CSS and a little  React Semantic-UI to serve my front end. Used API’s from Rapid API to find recipe information.",
+    "image": "",
 
-            "description" : "A recipe and food information app users can use to find any recipe by an ingredient from anywhere in the world! Get real time results back as you browse recipes or another users recipes. Users can create their own recipes to share with others around the world.",
-    
-            "image" : "",
+    "deployed": "https://around-the-plate-frontend.herokuapp.com/"
+  },
+  {
+    "projectName": "MA's Daily Dose",
+    "slug": "project-2",
 
-            "deployed" : "https://around-the-plate-frontend.herokuapp.com/"
-        },
-        {
+    "madeWith": "A full CRUD app with seven RESTful routes, built with Express, MongoDB, JavaScriptES6, HTML, and CSS",
 
-            "projectName" : "MA's Daily Dose",
-            "slug": "project-2",
+    "description": "A free mental health app where users can go for mental care and inspiration. Users can create an account and get free mental health advice or tips.",
 
-            "madeWith" : "A full CRUD app with seven RESTful routes, built with Express, MongoDB, JavaScriptES6, HTML, and CSS",
+    "image": "",
 
-            "description" : "A free mental health app where users can go for mental care and inspiration. Users can create an account and get free mental health advice or tips.",
-
-            "image" : "",
-
-            "deployed" : "https://ma-health-app.herokuapp.com/"
-
-        },
-        {
-
-        }
-    ]
+    "deployed": "https://ma-health-app.herokuapp.com/"
+  },
+  {}
+]

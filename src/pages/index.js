@@ -5,10 +5,13 @@ import Seo from "../components/seo"
 import "../styles/Footer.scss"
 import TopBody from "../components/Topbody"
 import Body from "../components/HomeBody"
-// import Projects from './ProjectBox'
+import Skills from '../components/skills'
+import Projects from '../components/projects'
+
 
 class HomePage extends React.Component {
   render() {
+
     const { data } = this.props
     // console.log(data)
     const pageTitle = data.site.siteMetadata.title
@@ -18,8 +21,9 @@ class HomePage extends React.Component {
         <Seo title="Home Page " />
 
         <TopBody />
-
         <Body />
+        <Projects />
+        <Skills />
       </Layout>
     )
   }

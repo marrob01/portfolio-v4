@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "rgb(231, 184, 112)"}}>
+      <IconContext.Provider value={{ color: "rgb(231, 184, 112)" }}>
         <nav className="navbar">
           <Link to="#" className="menu-bars">
             <FaIcons.FaBars onClick={showSidebar} />

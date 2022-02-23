@@ -5,7 +5,6 @@ import { AiFillWechat } from "react-icons/ai"
 import { VscBook } from "react-icons/vsc"
 
 const HomeBody = () => {
-
   // .odd-project{
   //   position: relative;
   //   color: red;
@@ -50,14 +49,16 @@ const HomeBody = () => {
             </h2>
 
             <p>
-              I am a Frontend Software Engineer who thrives in fast-paced team oriented environments. My analytical and tenacious mindset helps me persist through challenges by taking a procedural approach to challenges. I strive to deliver communication and unique solutions in and outside of engineering.
+              I am a Frontend Software Engineer who thrives in fast-paced team
+              oriented environments. My analytical and tenacious mindset helps
+              me persist through challenges by taking a procedural approach to
+              challenges. I strive to deliver communication and unique solutions
+              in and outside of engineering.
             </p>
           </div>
         </div>
 
         <br></br>
-
-        
       </section>
     </>
   )

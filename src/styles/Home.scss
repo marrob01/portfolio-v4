@@ -1,6 +1,4 @@
 
-
-
 html{
   scroll-behavior: smooth;
 }
@@ -53,40 +51,55 @@ html{
 
 
 
-
-#home-body{
-    // position: absolute;
-    top:60%;
-    width: 100%;
-    background-color: rgb(31, 31, 36) ;
-    z-index: -1;
-
-    .work-p{
-        list-style-type: none;
-        display: flex;
-        justify-content: space-evenly;
-
-      #link{
-          color: black;
-      }
-
-    }
-  
+#i{
+  color : #362c2c;
+  margin-left: 5%;
 }
-
-
 .project-container {
   display: flex;
   overflow: auto;
   scroll-snap-type: x mandatory;
   text-align: center;
   align-items: center;
-}
+  background-color: #0758b6a2;
 
+  button{
+
+    background-color: rgb(233, 209, 173);
+  }
+  .p-item p{
+    color: blanchedalmond;
+    padding: 15px;
+  }
+
+  .p-item h2{
+    color:rgb(231, 184, 112) ;
+
+  }
+}
 .project-container > .p-item{
   min-width: 100%;
   scroll-snap-align: start;
+  
 }
+
+
+@media screen and (min-width: 850px) {
+
+  .project-container {
+    position: relative;
+
+    .db{
+      position: absolute;
+      top:45%;
+    }
+  }
+
+ 
+}
+
+
+
 
 // .project-container{
 //   // text-align: center;

@@ -180,7 +180,7 @@ body{
 
   .top-section{
       background-color: black;
-      height: 50vh;
+      height: 40vh;
       width:100%;
       background-image: url("https://images.unsplash.com/photo-1556922404-e13d9ff95de8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTgzfHxjb21wdXRlcnN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
       background-repeat: no-repeat;
@@ -231,7 +231,7 @@ body{
   @media screen and (min-width: 1000px) {
 
     .top-section{
-      height: 50vh;
+      height: 40vh;
       background: none;
       display: flex;
       justify-content: center;

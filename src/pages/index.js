@@ -5,13 +5,11 @@ import Seo from "../components/seo"
 import "../styles/Footer.scss"
 import TopBody from "../components/Topbody"
 import Body from "../components/HomeBody"
-import Skills from '../components/skills'
-import Projects from '../components/projects'
-
+import Skills from "../components/skills"
+import Projects from "../components/projects"
 
 class HomePage extends React.Component {
   render() {
-
     const { data } = this.props
     // console.log(data)
     const pageTitle = data.site.siteMetadata.title

@@ -2,30 +2,31 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import "../styles/Footer.scss"
-import TopBody from "../components/Topbody"
-import Body from "../components/HomeBody"
+import Project from "../components/project"
+import Skills from "../components/skills"
 
 
-class HomePage extends React.Component {
+class ProjectPage extends React.Component {
   render() {
     const { data } = this.props
-    // console.log(data)
     const pageTitle = data.site.siteMetadata.title
     const authorName = data.site.siteMetadata.author
-    return (
-      <Layout title={pageTitle} subtitle="About " authorName={authorName}>
-        <Seo title="Home Page " />
 
-        <TopBody />
-        <Body />
-     
+    return (
+      <Layout
+        title={pageTitle}
+        subtitle="Recent Projects"
+        authorName={authorName}
+      >
+        <Seo title="Projects Page" />
+        <Project />
+        <Skills />
       </Layout>
     )
   }
 }
 
-export default HomePage
+export default ProjectPage
 
 export const pageQuery = graphql`
   query {
@@ -37,5 +38,6 @@ export const pageQuery = graphql`
     }
   }
 `
+
 
 

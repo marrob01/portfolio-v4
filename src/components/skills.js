@@ -1,5 +1,5 @@
 import * as React from "react"
-import "../styles/Home.scss"
+import "../styles/projects.scss"
 
 const Skills = () => {
   return (
@@ -9,32 +9,34 @@ const Skills = () => {
         <div className="skills-div">
           <ul className="skills-ul">
             <h2>Programing Languages</h2>
-            <li>SQL</li>
             <li>Javascript</li>
             <li>JQuery</li>
-            <li>Python</li>
+            <li>PHP</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>SCSS</li>
+            <li>SQL</li>
+            <li>Python</li>
           </ul>
 
           <ul className="skills-ul">
             <h2>Platforms And Frameworks</h2>
-            <li>React</li>
+            <li>Wordpress</li>
+            <li>React.js</li>
+            <li>Vue.js</li>
             <li>React Gatsby</li>
-            <li>Express</li>
             <li>Node.js</li>
             <li>Bootstrap</li>
-            <li>Material UI</li>
+            <li>Tailwind.css</li>
             <li>Flask</li>
             <li>Git / Github</li>
             <li>Heroku</li>
+            <li>Kinsta</li>
             <li>Postman</li>
           </ul>
 
           <ul className="skills-ul">
             <h2>Other Skills</h2>
-            <li>Linux</li>
             <li>JSON</li>
             <li>APIs</li>
             <li>RESTful API’s</li>

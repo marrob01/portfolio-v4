@@ -17,16 +17,16 @@ const Header = ({ siteTitle }) => {
     <>
       <IconContext.Provider value={{ color: "rgb(231, 184, 112)" }}>
         <nav className="navbar">
-          <Link to="#" className="menu-bars">
-            <FaIcons.FaBars onClick={showSidebar} />
-          </Link>
+            <Link to="#" className="menu-bars">
+              <FaIcons.FaBars className="icon" onClick={showSidebar} />
+            </Link>
+          
 
-          {/* <h1>ALS</h1> */}
-          <ul className="ul-nav">
+          <ul className="navbar__ul-nav">
             {TopNaVData.map((item, index) => {
               return (
-                <li key={index}>
-                  <Link to={item.path} target="blank">
+                <li classNmae="navbar__menu-items" key={index}>
+                  <Link to={item.path} >
                     {/* {item.icon} */}
                     <span>{item.title}</span>
                   </Link>
@@ -36,16 +36,16 @@ const Header = ({ siteTitle }) => {
           </ul>
         </nav>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-          <ul className="nav-menu-items" onClick={showSidebar}>
-            <li className="navbar-toggle">
-              <Link to="#" className="menu-bars">
-                <AiIcons.AiOutlineClose />
+              <Link to="#" className="close-side-nav">
+                <AiIcons.AiOutlineClose onClick={showSidebar}/>
               </Link>
-            </li>
+            
+          <ul className="nav-menu-items">
+           
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
-                  <Link to={item.path} target="blank">
+                  <Link to={item.path} >
                     {item.icon}
                     <span>{item.title}</span>
                   </Link>

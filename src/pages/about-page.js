@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import AboutBody from "../components/aboutBody"
 
-class projectPage extends React.Component {
+class AboutPage extends React.Component {
   render() {
     const { data } = this.props
     const pageTitle = data.site.siteMetadata.title
@@ -26,7 +26,7 @@ class projectPage extends React.Component {
   }
 }
 
-export default projectPage
+export default AboutPage
 export const pageQuery = graphql`
   query {
     site {

@@ -44,20 +44,63 @@
     }
   }
 
-  .head{
+  .projects-heading{
       width:100%;
       background-color: #9b93be;
-      .projects__header{
+      margin-left:5%;
+      margin-top:1em;
+      &__header{
         font-size: 4.5em;
-        background-color: #9b93be;
         text-transform: capitalize;
-        text-align: center;
-        color: #b3a2a2;
+        color: rgb(231, 184, 112);
         background-clip: text;
       }
 
 
   }
+
+  .projects-footer{
+    width:100%;
+    background-color: #9b93be;
+    padding-right:5%;
+    text-align: right;
+
+    &__foot{
+
+      font-size: 4.5em;
+        text-transform: capitalize;
+        color: rgb(231, 184, 112);
+        background-clip: text;
+
+    }
+  }
+
+
+  .more-work{
+    display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin-left:45%;
+        padding:2em;
+    .github{
+      height: 40px;
+        text-transform: capitalize;
+        font-size: 18px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        padding: 0.5em 1.5em ;
+    }
+    .pens{
+
+      background: none;
+        border: 2px solid #fff;
+
+    }
+  }
+
+  
 
   
   .projects{
@@ -73,20 +116,24 @@
 
         position: relative;
         padding:1em;
+        margin-bottom:1em;
 
       }
 
       &__content{
       
         padding:2em;
+        margin: 10em;
         text-align: center;
-        color: #fff;        transform: translateY(-90%);
-
-
+        color: #fff; 
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
         transition: all ease-in-out .7s;
         display: none;
-       
- 
+
     }
 
      
@@ -98,9 +145,9 @@
         color: black;
     }
     &__info{
-        margin: 40px;
+        margin: 3em;
         font-size: 20px;
-        line-height: 30px;
+        line-height: 2em;
         text-align: center;
         color: black;
     }
@@ -138,9 +185,8 @@
     }
     
     .projects__card:hover .projects__content{
-        transform: translateY(-90%);
-
-        display: block;
+      transform: translateY(-50%);
+      display: block;
     }
   }
   

@@ -46,14 +46,16 @@ const Project = () => {
       <div className="projects-heading">
         <h2 class="projects-heading__header"> - Some Of My Projects</h2>
       </div>
+      <hr></hr>
 
       <div className="projects">
-
+        {/* <img src="../images/atp-photo-1.png" /> */}
 
         {/* Project one */}
         <div class="projects__card">
           <Img fluid={projectImages.covid.childImageSharp.fluid} className="image" />
-          <div class="projects__content">
+          <div className="block">
+          <div class="projects__content block">
             <h2 class="projects__title">Covid-19 Budget</h2>
             <p class="projects__info">
               A Covid-19 budgeting app for government officals. A user can lookup the amount of money a state has received for Covid-19 relief, this way goverment officlas can tell if a state needs more funding for Covid-19.
@@ -69,6 +71,9 @@ const Project = () => {
             </div>
 
           </div>
+
+          </div>
+          
         </div>
 
         {/* Project two */}
@@ -113,9 +118,10 @@ const Project = () => {
         </div>
 
       </div>
+      <hr></hr>
 
       <div className="projects-footer">
-        <h2 class="projects-footer__foot"> Some More of my work - </h2>
+        <h2 class="projects-footer__foot"> - Some More of my work on</h2>
       </div>
 
       <div className="more-work">
